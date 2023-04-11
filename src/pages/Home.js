@@ -1,9 +1,9 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
 import {Button} from 'react-bootstrap'
-import {Nav} from "react-bootstrap";
 import '../styles/Home.css'
 import { useSelector } from "react-redux";
+import {Link} from 'react-router-dom'
 
 const Home = () => {
   const user = useSelector((state) => state.user);
@@ -17,18 +17,18 @@ const Home = () => {
           <h1>Share the world with your friends</h1>
           <p>chat app lets you connect with the world</p>
           { !user && (
-          <Nav.Link href="/login">
+          <Link to="/login">
             <Button className="bg-dark border-0">
               Get started <i className="fa-solid fa-comments"></i>
             </Button>
-          </Nav.Link>
+          </Link>
 )}
           { user && (
-          <Nav.Link href="/chatgo">
+          <Link to="/chatgo">
             <Button className="bg-dark border-0">
               Get started <i className="fa-solid fa-comments"></i>
             </Button>
-          </Nav.Link>
+          </Link>
 )}
         </div>
         

@@ -272,11 +272,11 @@
     font-size: 15px;
 }
 .msg-you{
-    font-size: 10px;
+    font-size: 6px;
     background:rgb(121, 228, 21);
-    padding: 5px;
+    padding: 2px;
     border-radius: 5px;
-    height:25px;
+    height:35px;
 }
 .border-img{
     border: 2px solid rgb(18, 201, 18);
